@@ -9,7 +9,6 @@ public class insertion_sort {
         int i = 0;
 
         for (int j = 1; j < array.length; j++) {
-            System.out.println("j: " + j);
             key = array[j];
             i = j - 1;
 
@@ -21,9 +20,13 @@ public class insertion_sort {
             array[i + 1] = key;
         }
 
+        String result = new String();
+
         for (Integer element : array) {
-            System.out.println("element: " + element);
+            result += element + " ";
         }
+
+        System.out.println(result);
     }
 
 }
